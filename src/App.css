@@ -1,10 +1,11 @@
 *{
   margin: 0;
   padding: 0;
- 
 }
 body{
   background-image: url(/assets/img/wallpaper.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .page{
   display: grid;
@@ -12,69 +13,102 @@ body{
   "header header "
   "aside main "
   "footer footer";
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   color: black
-
 }
 
 /* NAV */
-nav{
-  height: 70vh;
+
+header{
+  height: 100vh;
   width: 100vw;
   display: flex;
-  margin: -137px -2px 0px -2px;
-  background-image: url(/assets/img/header-jewelery.png);
-  background-size: cover;
+  margin: 0;
+  background-image: url(/assets/img/header4.png);
+  background-size:cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: end;
   grid-area: header;
 
 }
-.logo, nav ul{
+nav, .logo{
   box-shadow: 0px 1px 2px #3e3e3e, 0px -0.5px 5px #3e3e3e;
 }
-nav ul{
+nav{
   height: 70px;
   width: 100%;
   margin: 0 auto;
   padding: 0px 15px;
-  display: flex; 
-  justify-content: space-around;
-  align-items: center;
-  gap: 50px;
   background-color: rgba(52, 49, 45, 0.5);
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  
 }
-
+nav ul{
+  display: flex; 
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3.2rem;
+}
+.icons{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  margin-right: 0.9rem;
+}
+.nav-icons:hover{
+  opacity: 50%;
+}
 li{
   list-style: none;
+  
 }
 li a{
-  color: aliceblue;
+  color: rgb(240, 248, 255);
   text-decoration: none;
   flex: 1;
 }
 li a:hover{
   color: rgba(240, 248, 255, 0.6);
 }
-li a:active{
+.active{
   color: rgba(240, 248, 255, 0.5);
 }
 /* ASIDE */
 .aside{
   position: relative;
+  bottom: 0;
 }
 
 aside{
   background-color: rgba(56, 51, 51, 0.7);
+  padding: 10px;
   grid-area: aside;
-  height: 100vh;
   position: sticky;
   top: 0; 
-  bottom: 0;
+  bottom: 0; 
+  height: 100vh;
+  box-shadow: 10px 2px 17px -3px rgba(0,0,0,0.46);
+  scroll-behavior: none;
 }
+
+aside div{
+display: flex;
+justify-content: center;
+}
+
+aside li{
+  display: flex;
+}
+
 aside h2{
+  font-size: 1rem;
   padding: 10px;
   color: white;
+  text-align: center;
 }
 
 aside ul{
@@ -84,41 +118,131 @@ aside ul{
   gap: 20px;
   padding: 20px 10px;
 }
+
 aside ul li a:hover{
   color: rgba(240, 248, 255, 0.6);
 }
+
 aside ul li a:active{
   color: rgba(240, 248, 255, 0.9);
 }
 
+/* checkbox */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+  margin: 5px;
+
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 20px;
+  left: 2px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #beaa94;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #beaa94;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 
 
 /* CARDS */
 .cards-list{
   grid-area: main;
   display: flex;
-  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
-  gap: 10px;
-  background-color: #3e3e3e;
-  margin: 10px;
-  
-  
+  gap: 2px;
+  margin: 5px;
+  padding: 5px;
 }
+
 .card{
-
-  background-color: aliceblue;
-  flex: 1 0 21%;
-
+  width: 25vw;
+  border-radius: 5px;
+  text-align: center;
+  height: 50vh;
 }
+
 .card-img{
   width: 100%;
   height: 50%;
   object-fit: cover;
+  border-radius: 5px;
+}
+
+.card button{
+  margin: 30px;
+}
+.card button:hover{
+  border-color: aliceblue;
+}
+
+
+.card h2{
+  padding: 10px;
+}
+
+.description{
+  display: none;
 }
 
 /* FOOTER */
+
 footer{
   grid-area: footer;
-  background-color: aquamarine;
+  height: 50px;
+  background-color: rgba(52, 49, 45, 0.5);
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 0;
 }
