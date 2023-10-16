@@ -1,11 +1,14 @@
+import { useState } from 'react';
 
-function Aside() {
+function Aside(articleCategory, category, handleClick) {
+  
+
    return(
     <div className="aside">
     <aside>
         <div>
         <img src="/assets/img/filter.svg" alt="" />
-        <h2>Filters</h2>
+        <h3>Filters</h3>
         </div>
         <ul>
             <li>
@@ -20,16 +23,20 @@ function Aside() {
                 </label>
 
             </li>
-            <li>
-                <a href="">Rings</a>
-                <img src="/assets/img/expand.svg" alt="" />
-            </li>
         </ul>
-        <h2>Type of product</h2>
+        <h3>Type of product</h3>
         <ul>
-            <li><a href="">Necklaces</a></li>
-            <li><a href="">Earrings</a></li>
-            <li><a href="">Rings</a></li>
+            <li>
+                <button onClick={() => {handleClick(category)}} className="filter">Necklace</button>
+                </li>
+            <li>
+                
+                <button className="filter">Earrings</button>
+                </li>
+            <li>
+                <button className="filter">Rings</button>
+                </li>
+           
         </ul>
     </aside>
     </div>

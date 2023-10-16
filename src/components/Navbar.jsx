@@ -1,7 +1,7 @@
 function Navbar (){
     return (
         <>
-            <h1>Wilders Luxury Jewelry</h1>
+            <h1>Wild Luxury Jewelry</h1>
         <div className="navbar">
             <img src="/assets/img/Wild_Luxury.png" alt="Wilders Luxury logo" width={100} height={70} className="logo" />
             <nav>
@@ -10,7 +10,7 @@ function Navbar (){
                     <a href="#nav" className="active">Home</a>
                 </li>
                 <li>
-                    <a href="">Our products</a>
+                    <a href="">Our Collections</a>
                 </li>
                 <li>
                     <a href="">Learn to know us</a>

@@ -2,7 +2,7 @@
     {
         "id": 10, 
         "title": "Mini Creoles",
-        "description": "Discover our new mini Creoles earrings! They'll make perfect earrings to wear alone, or with one of our charms. Three-micron gold-plated.",
+        "description": "Discover our new mini Creoles earrings! ",
         "price": "39.99€",
         "image": "/assets/img/earrings_simple.png",
         "category": "earrings"
@@ -10,7 +10,7 @@
     {
         "id": 11, 
         "title": "Petites Creoles",
-        "description": "Discover our new Petites Creoles earrings! They'll make perfect earrings to wear alone, or with one of our charms. Three-micron gold-plated.",
+        "description": "Discover our new Petites Creoles earrings! Three-micron gold-plated.",
         "price": "49.99€",
         "image": "/assets/img/earrings.png",
         "category": "earrings"
@@ -33,51 +33,77 @@
     },
     {
         "id": 30, 
-        "title": "Almas rings",
-        "description": "The Almas rings are reminiscent of the sun's gentle rays. We already know you'll love it. Enseùble of 3 non adjustable gold-plated rings. ",
+        "title": "Gemelas rings",
+        "description": "The Gemelas rings are reminiscent of the sun's gentle rays. We already know you'll love it. Ensemble of 4 non adjustable gold-plated rings. ",
         "price": "89.99€",
         "image": "/assets/img/rings.png",
-        "category": "necklace"
-    },
-    {
-        "id": 30, 
-        "title": "Almas rings",
-        "description": "The Almas rings are reminiscent of the sun's gentle rays. We already know you'll love it. Enseùble of 3 non adjustable gold-plated rings. ",
-        "price": "89.99€",
-        "image": "/assets/img/rings.png",
-        "category": "necklace"
-    },
-    {
-        "id": 30, 
-        "title": "Almas rings",
-        "description": "The Almas rings are reminiscent of the sun's gentle rays. We already know you'll love it. Enseùble of 3 non adjustable gold-plated rings. ",
-        "price": "89.99€",
-        "image": "/assets/img/rings.png",
-        "category": "necklace"
-    },
-    {
-        "id": 30, 
-        "title": "Almas rings",
-        "description": "The Almas rings are reminiscent of the sun's gentle rays. We already know you'll love it. Enseùble of 3 non adjustable gold-plated rings. ",
-        "price": "89.99€",
-        "image": "/assets/img/rings.png",
-        "category": "necklace"
-    },
-    {
-        "id": 30, 
-        "title": "Almas rings",
-        "description": "The Almas rings are reminiscent of the sun's gentle rays. We already know you'll love it. Enseùble of 3 non adjustable gold-plated rings. ",
-        "price": "89.99€",
-        "image": "/assets/img/rings.png",
-        "category": "necklace"
+        "category": "ring"
     },
     {
         "id": 31, 
         "title": "Luna ring",
         "description": "The simple, streamlined design of our Louna ring makes it a must-have, ideal for finishing off your looks. A must-have to take everywhere with you. In 3-micron gold plating.",
-        "price": "69.99€",
+        "price": "29.99€",
         "image": "/assets/img/ring.png",
+        "category": "ring"
+    },
+    {
+        "id": 22, 
+        "title": "Elyos necklace",
+        "description": "Discover this necklace with its 3 micron gold-plated herringbone link. Its fineness allows it to be combined with other necklaces. Let yourself be tempted!",
+        "price": "59.99€",
+        "image": "/assets/img/necklace.jpg",
         "category": "necklace"
+    },
+    {
+        "id": 32, 
+        "title": "Almas rings",
+        "description": "The Almas rings are reminiscent of the sun's gentle rays. Perfect for you and your soulmate. Pair of 2 non adjustable gold-plated rings. ",
+        "price": "109.99€",
+        "image": "/assets/img/rings4.png",
+        "category": "ring"
+    },
+    {
+        "id": 33, 
+        "title": "Ensemble of rings",
+        "description": " Ensemble of 4 non adjustable gold-plated rings. ",
+        "price": "89.99€",
+        "image": "/assets/img/rings2.png",
+        "category": "ring"
+    },
+    {
+        "id": 12, 
+        "title": "Cassiope earrings",
+        "description": "Discover our new Cassiope Earrings ! They'll make perfect earrings to wear alone, or with one of our charms. Three-micron gold-plated.",
+        "price": "49.99€",
+        "image": "/assets/img/earrings3.png",
+        "category": "earrings"
+    },
+    {
+        "id": 13, 
+        "title": "Frenchie earrings",
+        "description": "Discover our new Frenchie Earrings ! Three-micron gold-plated.",
+        "price": "59.99€",
+        "image": "/assets/img/earrings5.png",
+        "category": "earrings"
+    }, 
+    {
+        "id": 14, 
+        "title": "Claudine earrings",
+        "description": "Discover our new Claudine Earrings ! Three-micron gold-plated.",
+        "price": "59.99€",
+        "image": "/assets/img/earrings6.png",
+        "category": "earrings"
+    },
+    {
+        "id": 15, 
+        "title": "Chain earrings",
+        "description": "Discover our new Claudine Earrings ! Three-micron gold-plated.",
+        "price": "39.99€",
+        "image": "/assets/img/earrings7.png",
+        "category": "earrings"
     }
+
+   
    
 ]
