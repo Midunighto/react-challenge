@@ -1,8 +1,5 @@
-import { useState } from 'react';
-
-function Aside(articleCategory, category, handleClick) {
-  
-
+    function Aside({setSelectedCategory}) {
+        
    return(
     <div className="aside">
     <aside>
@@ -27,15 +24,17 @@ function Aside(articleCategory, category, handleClick) {
         <h3>Type of product</h3>
         <ul>
             <li>
-                <button onClick={() => {handleClick(category)}} className="filter">Necklace</button>
-                </li>
+                <button onClick={() => setSelectedCategory(null)} className="filter">All</button>
+            </li>
             <li>
-                
-                <button className="filter">Earrings</button>
-                </li>
+                <button onClick={() =>  setSelectedCategory("necklace")} className="filter">Necklace</button>
+            </li>
             <li>
-                <button className="filter">Rings</button>
-                </li>
+                <button onClick={() =>  setSelectedCategory("earrings")} className="filter">Earrings</button>
+            </li>
+            <li>
+                <button onClick={() =>  setSelectedCategory("ring")} className="filter">Rings</button>
+            </li>
            
         </ul>
     </aside>

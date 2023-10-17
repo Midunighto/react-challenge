@@ -1,16 +1,17 @@
 import Card from "./Card"
 import data from "../data/data.json";
 
-function CardList(){
+function CardList({selectedCategory}){
+    const filteredData = selectedCategory ? data.filter((article) => article.category === selectedCategory) : data
     return(
         <main >
             <h2>The latest parts </h2>
             <div className="cards-list">
-            {data.map(article =>
+            {filteredData.map(article =>
                 <Card 
                 key={article.id} 
                 article={article}
-                categopry={article.category}
+                category={article.category}
                 price={article.price}/>
             )}
             </div>

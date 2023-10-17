@@ -115,7 +115,7 @@ aside{
   top: 0; 
   bottom: 0; 
   height: 100vh;
-  box-shadow: 7px 0 7px -6px #333;
+  box-shadow: 7px 0 7px -px #333;
   scroll-behavior: none;
   font-size: var(--font-textsize);
 }
